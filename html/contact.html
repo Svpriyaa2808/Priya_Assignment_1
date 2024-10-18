@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-form</title>
+    <link rel="stylesheet" href="../styles/home-header.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../images/pink.png" alt="logo" width="15%" height="auto">
+            <h1>Pink Accessories</h1>
+        </div>
+
+        <div class="navigation_bar">
+            <a href="../index.html">Home</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./gallery.html">Gallery</a>
+            <div class="active_link"><a href="./contact.html">Contact us</a></div>
+    </div>
+</header>
+
+    <section class="contact_form">
+            <form action="mailto: svpriyaa2808@gmail.com" method="post" class="contact_details">    
+                <fieldset>
+                    <legend >Contact details</legend>
+                    
+                    <label for="user-name">Your Name:</label>
+                    <input type="text" name="user-name" id="user-name" class="user-name" placeholder="First name" required>
+                    <input type="text" name="user-name" id="user-name" class="user-name" placeholder="Second name">
+                    
+                    
+                    <label for="user-items">What do you want to order:</label>
+                
+                    <label for="bangles" class="bangle_checkbox"> 
+                    <input type="checkbox" class="bangle_checkbox" id="bangles" name="order-items" value="Bangles">
+                    <span>Bangles</span></label>
+               
+                    <label for="jhumkas" class="jhumka_checkbox">
+                    <input type="checkbox" class="jhumka_checkbox" id="jhumkas" name="order-items" value="Jhumkas">
+                    <span>Jhumkas</span></label>
+                
+                    <label for="total-items">How many items do you want?:</label>
+                    <input type="number" id="total-items" name="total-items" class="total-items" step="1">
+
+                    <label for="bangle-size">Choose your bangle size:</label>
+                    <select name="bangle-size" id="bangle-size" class="bangle-size">
+                        <option value="2.0">2.0</option>
+                        <option value="2.2">2.2</option>
+                        <option value="2.4">2.4</option>
+                        <option value="2.6">2.6</option>
+                        <option value="2.8">2.8</option>
+                        <option value="2.10">2.10</option>
+                    </select>
+
+                    <label for="no-of-bangles">How many bangles do you want in a set?</label>
+                    <span>2</span>
+                    <input type="range" id="no-of-bangles" name="no-of-bangles" min="2" max="24" step="2">
+                    <span> 24 </span>
+                
+                   
+                    <label for="color-type">What color do you want?</label>
+                    <input type="text" list="colors" id="color-type" name="color-type" class="color-type">
+                    <datalist id="colors">
+                        <option value="Red"></option>
+                        <option value="Yellow"></option>
+                        <option value="Blue"></option>
+                        <option value="Green"></option>
+                        <option value="Orange"></option>
+                        <option value="Yellow"></option>
+                        <option value="Pink"></option>
+                        <option value="Black"></option>
+                        <option value="Golden"></option>
+                        <option value="Silver"></option>
+                    </datalist>
+                    <label for="address">Address</label>
+                    <label for="house-no">Housing/Flat No:</label>
+                    <input type="text" id="house-no" name="house-no" class="address" required>
+
+                    <label for="Street-name">Street-name:</label>
+                    <input type="text" id="Street-name" name="Street-name" class="address" required>
+
+                    <label for="city">City/Town:</label>
+                    <input type="text" id="town" name="city" class="address" required>
+
+                    <label for="pincode">pincode:</label>
+                    <input type="text" id="pincode" name="pincode" class="address" required>
+
+                    <label for="user-message">Emter your customization:</label>
+                    <textarea id="user-message" name="user-message" class="user-message" required>Your message</textarea>
+                    
+                    <label for="payment">How do you want to pay:</label>
+                    <input type="radio" name="payment" id="cod" value="cod"> 
+                    <label for="cod" class="radio-items">Cash on Delivery</label>
+
+                    <input type="radio" name="payment" id="online-payment" value="online-payment"> 
+                    <label for="online-payment" class="radio-items">online-payment</label>
+                        
+                    <button>Submit form</button>  
+                </fieldset>
+              
+            </form>
+
+        <div class="contact_image">
+            
+        </div>
+           
+    </section>
+    <footer class="footer">
+        <p>Copyright @2024</p>
+        <div class="social-media-icon">
+            <img src="../images/facebook-logo.png" alt="facebook-logo" width="15%" height="auto">
+            <img src="../images/Instagram1200.png" alt="Instagram-logo" width="15%" height="auto">
+            <img src="../images/whatsapp.png" alt="Whatsapp-logo" width="15%" height="auto">
+        
+        </div>
+    </footer>
+    
+</body>
+</html>

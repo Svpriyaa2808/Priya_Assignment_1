@@ -1,0 +1,21 @@
+.footer {
+    margin: 0;
+    padding: 8px;
+    color: #9F2042;
+    background-color: pink;
+    font-size: 18px;
+    display: flex;
+    position: relative;
+}
+
+.social-media-icon {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 75%;
+}
+
+@media  screen and (max-width:768px) {
+    .social-media-icon img {
+        width: 25%;
+    }
+}

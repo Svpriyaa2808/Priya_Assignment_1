@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/homewalledited.jpg');
+}
+
+.header {
+    padding-top: 0;
+    margin: 0;
+}
+
+.navigation_bar {
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px;
+}
+
+.navigation_bar a {
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 18px;
+}
+
+.navigation_bar a:hover {
+    font-size: 22px;
+    color: red;
+}
+
+.active_link a{
+    color: darkolivegreen;
+    border: 2px solid #9F2042;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 8px;
+    background-color: lightcoral;
+}
+
+.header_title {
+    padding-top: 32px;
+    margin-top: 16px;
+    background-color: blanchedalmond;
+    z-index: 0;
+}
+
+.title {
+    color: rgb(166, 10, 62);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: grid;
+    grid-template: repeat(1, 1fr) / 1fr 2fr 2fr;
+    gap: 8px;
+    margin: 8px;
+    z-index: 0;
+}
+
+.side_bar {
+    border-radius: 20px;
+    margin: 0;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    display: grid;
+    grid-template: repeat(11, 50px) / 1fr;
+    gap: 8px;
+}
+
+.options {
+    color: black;
+    background-color: azure;
+    border-radius: 5px;
+}
+
+.options:hover {
+    background-color: gray;
+}
+
+.options.options_blog {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.options_blog span {
+    padding: 16px;
+}
+
+.blog_layout_one, .blog_layout_two{
+    background-color: #FEFFBE;
+    border: 2px solid black;
+    margin: 16px;
+    padding: 16px;
+    height: 600px;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    border: none;
+    position: absolute;
+    bottom: 2%;
+    left: 75%;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button a:hover {
+    text-decoration: underline;
+    font-size: large;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .main-content {
+        display: grid;
+        grid-template: repeat(2, 1fr) / 1fr;
+    }
+
+    .side_bar {
+        display: none;
+    }
+
+}

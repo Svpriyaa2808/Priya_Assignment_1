@@ -153,6 +153,17 @@ button {
         z-index: 100;
     }
 
+    .navigation_bar a {
+        text-decoration: none;
+        color: #9F2042;
+        font-size: 1rem;
+    }
+    
+    .navigation_bar a:hover {
+        font-size: 2rem;
+        color: red;
+    }
+
     .contact_form {
         display: block;
     }

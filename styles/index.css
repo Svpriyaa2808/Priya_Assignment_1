@@ -138,22 +138,22 @@ body {
 
     10% {
         background-image: url('../images/pexels-mdsnmdsnmdsn-1831234.jpg');
-        animation-delay: 30s;
+        animation-delay: 2s;
     }
 
     25% {
         background-image: url('../images/pexels-mdsnmdsnmdsn-1831234.jpg');
-        animation-delay: 30s;
+        animation-delay: 5s;
     }
 
     50% {
         background-image: url('../images/pexels-karolina-grabowska-5485119.jpg');
-        animation: 30s;
+        animation: 15s;
     }
 
     75% {
         background-image: url('../images/pexels-leeloothefirst-5715242.jpg');
-        animation-delay: 30s;
+        animation-delay: 20s;
     }
 
     100% {
